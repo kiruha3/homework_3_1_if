@@ -7,7 +7,8 @@ public class Main {
         //task1();
         //task2();
         // task3();
-        task4();
+        //task4();
+        task5();
         }
 
     private static void task1() {
@@ -88,8 +89,19 @@ public class Main {
                 }
             }
         }
-
-
-
+    }
+    private static void task5() {
+        int ageChild = 14;
+        boolean childDownFive = ageChild<5;
+        boolean childWithParent = ageChild == 5|| ageChild > 5 && ageChild < 14;
+        if (childDownFive){
+            System.out.println("Если возраст ребенка равен "+ageChild+", то ему нельзя кататься на аттракционе");
+        }else {
+            if (childWithParent){
+                System.out.println("Если возраст ребенка равен "+ageChild+" ,то ему можно кататься на аттракционе в сопровождении");
+            }else {
+                System.out.println("Если возраст ребенка равен "+ageChild+" ,то ему можно кататься на аттракционе");
+            }
+        }
     }
 }
