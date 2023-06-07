@@ -40,6 +40,7 @@ public class Main {
             System.out.println("На улице "+ temperatureTwo+" градусов, можно идти без шапки");
         }else{
             System.out.println("На улице "+ temperatureTwo+" градусов, нужно надеть шапку");
+
         }
     }
 }
