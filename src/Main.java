@@ -116,24 +116,22 @@ public class Main {
                 System.out.printf("стоячее место для вас");
             }
         } else if(passanger > maxPassanger){
-            System.out.printf("В вагоне нет мест, он збит");
+            System.out.println("В вагоне нет мест, он збит");
         }
     }
 
     private static void task7(){
-        int one = 1;
-        int two = 2;
-        int three = 3;
-        int maxNumber = 0;
-        if (maxNumber > 1){
-            maxNumber=one;
-        }else if (one > maxNumber){
-            maxNumber = one;
-            }if (two > maxNumber){
-                maxNumber = two;
-                }if (three > maxNumber){
-                    maxNumber = three;
-                }
-        System.out.printf("Маскимальное число -> "+maxNumber);
+        int one = 13;
+        int two = 22;
+        int three = 33;
+        int maxNumber ;
+        if (one > two){
+        maxNumber = one;
+        }else if (two > three){
+            maxNumber = two;
+            }else{
+                maxNumber = three;
+            }
+        System.out.println("Маскимальное число -> "+maxNumber);
     }
 }
