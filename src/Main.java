@@ -5,7 +5,8 @@ import java.net.SocketOption;
 public class Main {
     public static void main(String[] args) {
         //task1();
-        task2();
+        //task2();
+        task3();
         }
 
     private static void task1() {
@@ -42,5 +43,22 @@ public class Main {
             System.out.println("На улице "+ temperatureTwo+" градусов, нужно надеть шапку");
 
         }
+    }
+    private static void task3() {
+        int speedMore = 65;
+        int speedLow = 55;
+
+        if (speedMore > 60){
+            System.out.println("Если скорость "+ speedMore +", то придется заплатить штраф");
+        }else{
+            System.out.println("Если скорость "+ speedLow +", то можно ездить спокойно");
+        }
+
+        if (speedLow > 60){
+            System.out.println("Если скорость "+ speedMore +", то придется заплатить штраф");
+        }else{
+            System.out.println("Если скорость "+ speedLow +", то можно ездить спокойно");
+        }
+
     }
 }
