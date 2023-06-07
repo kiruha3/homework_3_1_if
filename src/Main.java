@@ -111,9 +111,9 @@ public class Main {
         if (canEnter){
             System.out.printf("В вагоне вас есть ");
             if (sitPlace){
-                System.out.printf("сидячее место для вас");
+                System.out.println("сидячее место для вас");
             }else {
-                System.out.printf("стоячее место для вас");
+                System.out.println("стоячее место для вас");
             }
         } else if(passanger > maxPassanger){
             System.out.println("В вагоне нет мест, он збит");
