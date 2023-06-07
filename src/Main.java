@@ -9,7 +9,8 @@ public class Main {
         // task3();
 //        task4();
 //        task5();
-        task6();
+        //task6();
+        task7();
         }
 
     private static void task1() {
@@ -119,5 +120,20 @@ public class Main {
         }
     }
 
-
+    private static void task7(){
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        int maxNumber = 0;
+        if (maxNumber > 1){
+            maxNumber=one;
+        }else if (one > maxNumber){
+            maxNumber = one;
+            }if (two > maxNumber){
+                maxNumber = two;
+                }if (three > maxNumber){
+                    maxNumber = three;
+                }
+        System.out.printf("Маскимальное число -> "+maxNumber);
+    }
 }
