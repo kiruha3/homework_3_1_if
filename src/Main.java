@@ -48,17 +48,17 @@ public class Main {
         }
     }
     private static void task3() {
-        int speedMore = 65;
+        int speedMore = 61;
         int speedLow = 55;
 
         if (speedMore > 60){
             System.out.println("Если скорость "+ speedMore +", то придется заплатить штраф");
         }else{
-            System.out.println("Если скорость "+ speedLow +", то можно ездить спокойно");
+            System.out.println("Если скорость "+ speedMore +", то можно ездить спокойно");
         }
 
-        if (speedLow > 60){
-            System.out.println("Если скорость "+ speedMore +", то придется заплатить штраф");
+        if (speedLow >= 60){
+            System.out.println("Если скорость "+ speedLow +", то придется заплатить штраф");
         }else{
             System.out.println("Если скорость "+ speedLow +", то можно ездить спокойно");
         }
