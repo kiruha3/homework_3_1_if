@@ -7,8 +7,9 @@ public class Main {
         //task1();
         //task2();
         // task3();
-        task4();
-        task5();
+//        task4();
+//        task5();
+        task6();
         }
 
     private static void task1() {
@@ -96,4 +97,27 @@ public class Main {
                 System.out.println("Если возраст ребенка равен "+ageChild+" ,то ему можно кататься на аттракционе");
                  }
     }
+    private static void task6() {
+
+        int passanger = 4;
+
+        int maxPassanger = 102;
+        int allSitPlace = 60;
+
+        boolean canEnter = passanger < (maxPassanger+1);
+        boolean sitPlace = passanger < (allSitPlace+1);
+
+        if (canEnter){
+            System.out.printf("В вагоне вас есть ");
+            if (sitPlace){
+                System.out.printf("сидячее место для вас");
+            }else {
+                System.out.printf("стоячее место для вас");
+            }
+        } else if(passanger > maxPassanger){
+            System.out.printf("В вагоне нет мест, он збит");
+        }
+    }
+
+
 }
