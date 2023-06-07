@@ -6,7 +6,8 @@ public class Main {
     public static void main(String[] args) {
         //task1();
         //task2();
-        task3();
+        // task3();
+        task4();
         }
 
     private static void task1() {
@@ -26,7 +27,6 @@ public class Main {
                     " совершеннолетия, нужно немного подождать");
         }
     }
-
     private static void task2() {
         int temperatureOne = 5;
         int temperatureTwo = -5;
@@ -59,6 +59,37 @@ public class Main {
         }else{
             System.out.println("Если скорость "+ speedLow +", то можно ездить спокойно");
         }
+    }
+    private static void task4() {
+        ///задача 4
+        int human = 7;
+        boolean childHome = human > 1 && human < 7;
+        boolean childSchool = human > 6 && human < 19;
+        boolean NotChildJustUniver = human > 18 && human < 25;
+        boolean workHuman = human > 24 && human < 60;
+        if (human < 2){
+            System.out.println("Если возраст человека равен "+human+" ,то ему пора спать");
+        }else {
+            if (childHome) {
+                System.out.println("Если возраст человека равен "+human+", то ему нужно ходить в детсвкий сад");
+            }else {
+                if (childSchool) {
+                    System.out.println("Если возраст человека равен "+human+", то ему нужно ходить в школу");
+                }else {
+                    if (NotChildJustUniver) {
+                        System.out.println("Если возраст человека равен "+human+", то ему нужно ходить в Университет");
+                    }else {
+                        if (workHuman) {
+                            System.out.println("Если возраст человека равен "+human+", то ему нужно ходить на работу");
+                        }else {
+                            System.out.println("Если возраст человека равен "+human+", то ему можно отдохнуть");
+                        }
+                    }
+                }
+            }
+        }
+
+
 
     }
 }
