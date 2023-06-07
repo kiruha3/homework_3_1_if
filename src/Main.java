@@ -121,17 +121,17 @@ public class Main {
     }
 
     private static void task7(){
-        int one = 13;
-        int two = 22;
+        int one = 22;
+        int two = 21;
         int three = 33;
-        int maxNumber ;
-        if (one > two){
-        maxNumber = one;
-        }else if (two > three){
+        int maxNumber = 0;
+        if (one > two && three < one) {
+            maxNumber = one;
+        }else if (two > one && three < two) {
             maxNumber = two;
-            }else{
-                maxNumber = three;
-            }
-        System.out.println("Маскимальное число -> "+maxNumber);
+        }else if (three > one && two < three) {
+            maxNumber = three;
+        }
+            System.out.println("Маскимальное число -> " + maxNumber);
     }
 }
