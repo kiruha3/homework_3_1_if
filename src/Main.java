@@ -116,7 +116,7 @@ public class Main {
                 System.out.println("стоячее место для вас");
             }
         } else if(passanger > maxPassanger){
-            System.out.println("В вагоне нет мест, он збит");
+            System.out.println("В вагоне нет мест, он забит");
         }
     }
 
