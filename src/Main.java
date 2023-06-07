@@ -7,7 +7,7 @@ public class Main {
         //task1();
         //task2();
         // task3();
-        //task4();
+        task4();
         task5();
         }
 
@@ -70,38 +70,30 @@ public class Main {
         boolean workHuman = human > 24 && human < 60;
         if (human < 2){
             System.out.println("Если возраст человека равен "+human+" ,то ему пора спать");
-        }else {
-            if (childHome) {
+        }else if (childHome) {
                 System.out.println("Если возраст человека равен "+human+", то ему нужно ходить в детсвкий сад");
-            }else {
-                if (childSchool) {
-                    System.out.println("Если возраст человека равен "+human+", то ему нужно ходить в школу");
-                }else {
-                    if (NotChildJustUniver) {
+            }else if (childSchool) {
+                System.out.println("Если возраст человека равен "+human+", то ему нужно ходить в школу");
+                }else if (NotChildJustUniver) {
                         System.out.println("Если возраст человека равен "+human+", то ему нужно ходить в Университет");
-                    }else {
-                        if (workHuman) {
+                    }else if (workHuman) {
                             System.out.println("Если возраст человека равен "+human+", то ему нужно ходить на работу");
                         }else {
                             System.out.println("Если возраст человека равен "+human+", то ему можно отдохнуть");
                         }
                     }
-                }
-            }
-        }
-    }
+
+
     private static void task5() {
-        int ageChild = 14;
+        int ageChild = 4;
         boolean childDownFive = ageChild<5;
         boolean childWithParent = ageChild == 5|| ageChild > 5 && ageChild < 14;
         if (childDownFive){
             System.out.println("Если возраст ребенка равен "+ageChild+", то ему нельзя кататься на аттракционе");
-        }else {
-            if (childWithParent){
+            }else if (childWithParent){
                 System.out.println("Если возраст ребенка равен "+ageChild+" ,то ему можно кататься на аттракционе в сопровождении");
-            }else {
+                }else {
                 System.out.println("Если возраст ребенка равен "+ageChild+" ,то ему можно кататься на аттракционе");
-            }
-        }
+                 }
     }
 }
