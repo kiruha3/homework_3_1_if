@@ -4,12 +4,12 @@ import java.net.SocketOption;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        //task1();
-        //task2();
-        // task3();
-//        task4();
-//        task5();
-        //task6();
+        task1();
+        task2();
+        task3();
+        task4();
+        task5();
+        task6();
         task7();
         }
 
